@@ -1,0 +1,66 @@
+baseURL: "https://limbotheevil.github.io"
+languageCode: "zh-cn"
+title: "LimBo The Evil"
+theme: "PaperMod"
+
+params:
+  env: production
+  title: "LimBo The Evil"
+  description: "LimBo The Evil"
+  author: "LimBo The Evil"
+  
+  # 主页设置
+  homeInfoParams:
+    Title: "开心的孤独者 Just Happy Hacking!"
+    Content: "我看重每一个我说过的承诺，也看重每个对我的承诺 I honor every promise I make, just as I honor every promise made to me.\n"
+
+  # 社交链接
+  socialIcons:
+    - name: github
+      url: "https://github.com/limbotheevil"
+    - name: email
+      url: "mailto:limbotheevil@hotmail.com"
+
+  # 搜索功能
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+
+# 菜单配置
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 20
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 30
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 40
+    - identifier: about       
+      name: 关于
+      url: /about/
+      weight: 30
+
+# 分类法
+taxonomies:
+  tag: tags
+  category: categories
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
