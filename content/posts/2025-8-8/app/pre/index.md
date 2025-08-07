@@ -1,7 +1,7 @@
 +++
 date = '2025-08-08T00:16:11+08:00'
 draft = false
-title = 'App_first'
+title = 'APP逆向分析第一章-准备'
 tag = 'app'
 +++
 
